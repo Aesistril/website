@@ -1,8 +1,27 @@
+@font-face {
+  font-family: mainfont;
+  src: url(/fonts/Courier_Prime/CourierPrime-Regular.ttf);
+  /* src: url(/fonts/nimbus-mono/nimbusmono-regular.otf); */
+  /* src: url(/fonts/tex-gyre-cursor/texgyrecursor-regular.otf); */
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: mainfont;
+  src: url(/fonts/Courier_Prime/CourierPrime-Bold.ttf);
+  /* src: url(/fonts/nimbus-mono/nimbusmono-regular.otf); */
+  /* src: url(/fonts/tex-gyre-cursor/texgyrecursor-regular.otf); */
+  font-weight: bold;
+}
+
 body {
-    background-image: url("/images/themes/default/bgtile.png");
-    image-rendering: pixelated;
+    min-height: 100wh;
+    background: url(/images/themes/cde/bgtile.png);
     background-repeat: repeat;
+    background-size: auto;
+    image-rendering: pixelated;
     font-size: 1em;
+    font-family: 'mainfont';
 }
 
 .center {
@@ -10,21 +29,74 @@ body {
     margin-right: auto;
 }
 
+.appgrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+    padding: 10px 0;
+}
+
+.appicon {
+    display: block;
+    width: 7%;
+    min-width: 40px;
+    text-align: center;
+}
+
+.appicon img {
+    width: 100%;
+}
+
 .window {
     box-sizing: border-box;
     border-style: solid;
     border-width: 96px 40px 53px;
-    border-image-source: url("/images/themes/cde/window.png");
+    border-image-source: url(/images/themes/cde/window.png);
     /* top | left and right | bottom */
     border-image-slice: 96 40 53 fill;
     border-image-repeat: stretch;
 }
 
 .window-title {
-    margin-top: -80px;
-    margin-bottom: 80px;
+    margin-top: -83px;
+    margin-bottom: 83px;
     text-align: center;
     font-weight: bold;
+    font-size: larger;
+    color: white;
+}
+
+.windowtb {
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 96px 40px 53px;
+    border-image-source: url(/images/themes/cde/windowtb.png);
+    /* top | left and right | bottom */
+    border-image-slice: 96 40 53 fill;
+    border-image-repeat: stretch;
+}
+
+.windowtb-title {
+    margin-top: -83px;
+    margin-bottom: 83px;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: white;
+}
+
+.windowtb-toolbar {
+    margin-top: -68px;
+    margin-bottom: 45px;
+    margin-left: -20px;
+    font-size: 1.35em;
+    color: white;
+}
+
+.windowtb-toolbar a {
+    color: white;
+    text-decoration: none;
+    margin-right: 7px;
 }
 
 .maincontent {
@@ -39,7 +111,7 @@ body {
 }
 
 /* anything in between a phone and a laptop */
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     .maincontent {
         width: 70%;
     }
