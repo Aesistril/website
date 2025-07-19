@@ -1,17 +1,17 @@
 @font-face {
-  font-family: mainfont;
-  src: url(/fonts/Courier_Prime/CourierPrime-Regular.ttf);
-  /* src: url(/fonts/nimbus-mono/nimbusmono-regular.otf); */
-  /* src: url(/fonts/tex-gyre-cursor/texgyrecursor-regular.otf); */
-  font-weight: normal;
+    font-family: mainfont;
+    src: url(/fonts/Courier_Prime/CourierPrime-Regular.ttf);
+    /* src: url(/fonts/nimbus-mono/nimbusmono-regular.otf); */
+    /* src: url(/fonts/tex-gyre-cursor/texgyrecursor-regular.otf); */
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: mainfont;
-  src: url(/fonts/Courier_Prime/CourierPrime-Bold.ttf);
-  /* src: url(/fonts/nimbus-mono/nimbusmono-regular.otf); */
-  /* src: url(/fonts/tex-gyre-cursor/texgyrecursor-regular.otf); */
-  font-weight: bold;
+    font-family: mainfont;
+    src: url(/fonts/Courier_Prime/CourierPrime-Bold.ttf);
+    /* src: url(/fonts/nimbus-mono/nimbusmono-regular.otf); */
+    /* src: url(/fonts/tex-gyre-cursor/texgyrecursor-regular.otf); */
+    font-weight: bold;
 }
 
 body {
@@ -24,6 +24,7 @@ body {
 .buttonbox {
     text-align: center;
     gap: 10px;
+    margin-top: 40px;
 }
 
 .buttonbox a {
@@ -73,25 +74,32 @@ body {
     height: 1.7em;
 }
 
-/* responsive container */
+.avatar {
+    height: 100%;
+}
+
+/* phone */
 @media screen and (min-width: 320px) {
     .outerdiv {
         width: 95%;
     }
 }
 
+/* anything in between a phone and a laptop */
 @media screen and (min-width: 600px) {
     .outerdiv {
         width: 70%;
     }
 }
 
+/* desktop laptop etc */
 @media screen and (min-width: 1100px) {
     .outerdiv {
         width: 45%;
     }
 }
 
+/* 4K, ultrawide, TV and other rich stuff */
 @media screen and (min-width: 2000px) {
     .outerdiv {
         width: 30%;
