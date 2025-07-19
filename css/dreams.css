@@ -1,0 +1,7 @@
+body {
+    background: url(/images/themes/dreams/bgtile.gif);
+    background-repeat: repeat;
+    image-rendering: pixelated;
+    font-size: 1em;
+    font-family: 'mainfont';
+}
