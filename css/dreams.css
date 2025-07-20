@@ -6,11 +6,12 @@ body {
     font-family: 'mainfont';
 }
 
-p, a, b, h1, h2, h3{
+p, a, b, i, u, li, h1, h2, h3{
     color: white;
 }
 
 .maincontent {
+    box-sizing: border-box;
     background-color: #001933cc;
     border: 2px solid #336699;
     padding: 20px;
