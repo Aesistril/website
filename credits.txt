@@ -1,1 +1,4 @@
-bgtile.png https://trisquel.info/en/forum/old-fashioned-tiled-wallpaper
+images/themes/cde/bgtile.png        https://trisquel.info/en/forum/old-fashioned-tiled-wallpaper
+images/themes/dreams/bgtile.gif     https://rivendell.neocities.org/backgrounds/
+CDE Window Decorations              Screenshots from CDE on Debian 12
+Some icons                          CDE-Reborn icon theme for Linux
