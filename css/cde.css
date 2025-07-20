@@ -8,11 +8,6 @@ body {
     font-family: 'mainfont';
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .appgrid {
     display: flex;
     flex-wrap: wrap;

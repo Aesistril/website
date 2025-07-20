@@ -1,21 +1,22 @@
 @font-face {
   font-family: mainfont;
   src: url(/fonts/Courier_Prime/CourierPrime-Regular.ttf);
-  /* src: url(/fonts/nimbus-mono/nimbusmono-regular.otf); */
-  /* src: url(/fonts/tex-gyre-cursor/texgyrecursor-regular.otf); */
   font-weight: normal;
 }
 
 @font-face {
   font-family: mainfont;
   src: url(/fonts/Courier_Prime/CourierPrime-Bold.ttf);
-  /* src: url(/fonts/nimbus-mono/nimbusmono-regular.otf); */
-  /* src: url(/fonts/tex-gyre-cursor/texgyrecursor-regular.otf); */
   font-weight: bold;
 }
 
 .maincontent {
     width: 40%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* phone */
