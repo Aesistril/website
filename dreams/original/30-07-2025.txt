@@ -1,0 +1,4 @@
+30th July 2025
+Tabletim (surface pro 8) gelmişti. Tuhaf bir şekilde Windows 7 kurulu idi. Ekrana biraz dokundum. Uykuya aldığımda sanki GPU arızalıymış gibi artifact oluşuyordu. Linux kuracaktım ama bir türlü başlamak istemiyorum sanırım garantiyi bozmaktan korkuyordum ya da GPU sorunu yüzünden. Genel olarak kafam kaışmıştı
+
+My tablet (Surface Pro 8) arrived. Weirdly enough, it had Windows 7 installed on it. I touched the screen a bit. When I put it to sleep, it was creating weird artifacts, as if there was something wrong with the GPU. I was going to install Linux on it, just like how I am gonna do in real life, but I was worried about the GPU problems and the warranty. I was just confused in general.
