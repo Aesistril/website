@@ -8,6 +8,8 @@ body {
     font-family: 'mainfont';
 }
 
+/* ############################## App Grid ############################## */
+
 .appgrid {
     display: flex;
     flex-wrap: wrap;
@@ -26,55 +28,51 @@ body {
     width: 100%;
 }
 
+/* ############################## Window ############################## */
+
 .window {
     box-sizing: border-box;
     border-style: solid;
-    border-width: 96px 40px 53px;
-    border-image-source: url(/images/themes/cde/window.png);
-    /* top | left and right | bottom */
-    border-image-slice: 96 40 53 fill;
     border-image-repeat: stretch;
+}
+
+.window-yellow {
+    border-width: 54px 40px 53px;
+    /* top | left and right | bottom */
+    border-image-slice: 54 40 53 fill;
+    border-image-source: url(/images/themes/cde/window.png);
 }
 
 .window-red {
-    box-sizing: border-box;
-    border-style: solid;
-    border-width: 96px 40px 53px;
-    border-image-source: url(/images/themes/cde/window-red.png);
+    border-width: 54px 40px 53px;
     /* top | left and right | bottom */
-    border-image-slice: 96 40 53 fill;
-    border-image-repeat: stretch;
+    border-image-slice: 54 40 53 fill;
+    border-image-source: url(/images/themes/cde/window-red.png);
 }
 
-.window-title {
-    margin-top: -83px;
-    margin-bottom: 83px;
-    text-align: center;
-    font-weight: bold;
-    font-size: larger;
-    color: white;
-}
-
-.windowtb {
-    box-sizing: border-box;
-    border-style: solid;
+.windowmb {
     border-width: 96px 40px 53px;
     border-image-source: url(/images/themes/cde/windowtb.png);
     /* top | left and right | bottom */
     border-image-slice: 96 40 53 fill;
-    border-image-repeat: stretch;
 }
 
-.windowtb-title {
-    margin-top: -83px;
+/* ############################## Window Elements ############################## */
+
+.window-title {
     margin-bottom: 83px;
     text-align: center;
     font-weight: bold;
     font-size: larger;
     color: white;
+    margin-top: -41px; /* default */
 }
 
-.windowtb-toolbar {
+.windowmb > .window-title {
+    margin-top: -83px !important;
+}
+
+.windowmb-menubar {
     margin-top: -68px;
     margin-bottom: 45px;
     margin-left: -20px;
@@ -82,8 +80,12 @@ body {
     color: white;
 }
 
-.windowtb-toolbar a {
+.windowmb-menubar a {
     color: white;
     text-decoration: none;
     margin-right: 7px;
+}
+
+.window-toolbar {
+    background-color: #c6b2a8;
 }
