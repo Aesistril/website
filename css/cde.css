@@ -88,4 +88,30 @@ body {
 
 .window-toolbar {
     background-color: #c6b2a8;
+    width: calc(100% + 50px);
+    margin-top: -26px;
+    margin-left: -25px;
+}
+
+/* bottom border */
+.window-toolbar > hr {
+    height: 2px;
+    background: #6a605a;
+    border-color: #9b8c84;
+    border-width: 1px;
+    border-style: solid;
+}
+
+/* ############################## UI Elements ############################## */
+
+.button {
+    display: inline-block;
+    background-color: #c6b2a8;
+    border-style: solid;
+    border-color: #daccc6 #83776f #83776f #daccc6;
+    padding: 5px;
+}
+
+.button > img {
+    image-rendering: pixelated;
 }
