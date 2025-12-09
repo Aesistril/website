@@ -1,0 +1,16 @@
+.embedded-browser {
+    width: calc(100% + 42px);
+    height: 350px;
+    margin-left: -21px;
+    margin-right: -21px;
+    margin-top: -8px;
+    margin-bottom: -6px;
+}
+
+.toolbar-button {
+    width: 60px;
+}
+
+.toolbar-button > img {
+    width: 35px;
+}

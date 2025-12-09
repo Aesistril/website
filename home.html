@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/css/cde.css" rel="stylesheet">
     <link href="/css/base.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
+    <script src="/js/webnavigator.js"></script>
     <title>Aesistril's Website</title>
 </head>
 
@@ -31,6 +33,7 @@
         <p> </p>
     </div>
 
+    <!-- TODO: Fix centering here -->
     <div class="window window-yellow center maincontent" style="margin-top: 50px;">
         <p class="window-title" style="margin-bottom: 40px;">Page Manager</p>
 
@@ -55,11 +58,40 @@
     </div>
 
     <div class="window window-red center maincontent" style="margin-top: 50px;">
-        <p class="window-title" style="margin-bottom: 40px;">Interwebz Navigator 1.0</p>
-            <div class="windw">
+        <p class="window-title" style="margin-bottom: 40px;">Webz Navigator</p>
+            <div class="window-toolbar">
+                <a class="button toolbar-button"
+                   onclick="event.preventDefault(); loadFrame('/index.html')">
+                    <img src="/images/homepage/buttons/home.png" alt="">
+                    <p>Home</p>
+                </a>
 
-            </div>
+                <a class="button toolbar-button"
+                   onclick="event.preventDefault(); loadFrame('//users4.smartgb.com/g/g.php?a=s&i=g44-82185-02')">
+                    <img src="/images/homepage/buttons/book.png" alt="">
+                    <p>G.Book</p>
+                </a>
+
+                <br>
+
+                <b>Address: </b>
+                <input id="addressBar" type="text" class="input-field-red" style="margin-top: 8px;">
+
+                <a class="button" style="padding: 0 8px 0 0;"
+                   onclick="event.preventDefault(); goAddress()">
+                    <p style="margin-top: 0;">
+                        <img src="/images/homepage/buttons/arrow-right.png" alt="" style="display: inline; vertical-align: middle;">
+                        Go
+                    </p>
+                </a>
+
+                <hr>
         </div>
+
+        <iframe id="browserFrame"
+        src="//users4.smartgb.com/g/g.php?a=s&i=g44-82185-02"
+        class="embedded-browser"></iframe>
+
     </div>
 </body>
 

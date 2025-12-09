@@ -109,9 +109,32 @@ body {
     background-color: #c6b2a8;
     border-style: solid;
     border-color: #daccc6 #83776f #83776f #daccc6;
+    border-width: 2px;
     padding: 5px;
+    text-decoration: none;
 }
 
 .button > img {
     image-rendering: pixelated;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button > p {
+    margin: 0px;
+    margin-top: 5px;
+    color: black;
+    text-align: center;
+}
+
+.input-field-red {
+    display: inline-block;
+    background-color: #b7878d;
+    border-style: solid;
+    border-color: #6a605a #e7deda #e7deda #6a605a;
+    padding: 5px;
+    border-width: 2px;
+    margin: 3px;
+    outline: none;
 }
