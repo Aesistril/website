@@ -8,6 +8,11 @@ body {
     font-family: 'mainfont';
 }
 
+a {
+    color: black;
+    font-weight: bold;
+}
+
 /* ############################## App Grid ############################## */
 
 .appgrid {
@@ -115,7 +120,7 @@ body {
 }
 
 .button > img {
-    image-rendering: pixelated;
+    /* image-rendering: pixelated; */
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -126,6 +131,26 @@ body {
     margin-top: 5px;
     color: black;
     text-align: center;
+}
+
+.button-inline {
+    display: inline-block;
+    background-color: #c6b2a8;
+    border-style: solid;
+    border-color: #daccc6 #83776f #83776f #daccc6;
+    border-width: 2px;
+    text-decoration: none;
+    padding: 0 8px 0 0;
+}
+
+.button-inline > img {
+    display: inline;
+    vertical-align: middle;
+}
+
+.button-inline > p {
+    margin-top: 8px;
+    margin-bottom: 0;
 }
 
 .input-field-red {

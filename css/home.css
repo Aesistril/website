@@ -14,3 +14,17 @@
 .toolbar-button > img {
     width: 35px;
 }
+
+.webring-container {
+    width: 30%;
+    text-align: center;
+}
+
+.webring-container > .webring-name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.webring-container > .webring-icon {
+    width: 50%;
+}
