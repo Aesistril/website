@@ -28,3 +28,15 @@
 .webring-container > .webring-icon {
     width: 50%;
 }
+
+.webbutton-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: var(--maincontent-width);
+    margin: 20px auto 0 auto;
+}
+
+.webbutton-container > img {
+    display: inline;
+}

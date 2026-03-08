@@ -31,6 +31,10 @@
     .maincontent {
         width: 70%;
     }
+
+    :root {
+        --maincontent-width: 70%;
+    }
 }
 
 /* desktop laptop etc */
@@ -38,11 +42,19 @@
     .maincontent {
         width: 45%;
     }
+
+    :root {
+        --maincontent-width: 45%;
+    }
 }
 
 /* 4K, ultrawide, TV and other rich stuff */
 @media screen and (min-width: 2000px) {
     .maincontent {
         width: 30%;
+    }
+
+    :root {
+        --maincontent-width: 30%;
     }
 }
