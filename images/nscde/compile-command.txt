@@ -1,0 +1,1 @@
+for backdrop in backdrops/*; do for palette in palettes/*; do python3 palette_colorgen.in -p $palette -n 8 -i $backdrop -P 1 -b | magick - compiled_bg/$(basename $backdrop .pm)_$(basename $palette .dp).png; done; done
