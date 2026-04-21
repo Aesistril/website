@@ -19,6 +19,7 @@
     width: 30%;
     text-align: center;
     display: inline-block;
+    margin-bottom: 20px;
 }
 
 .webring-container > .webring-name {
@@ -28,6 +29,22 @@
 
 .webring-container > .webring-icon {
     width: 50%;
+}
+
+.webring-container > .webring-pc-overlay {
+    display: inline-block;
+    width: 50%;
+    aspect-ratio: 1;
+    background-image: url('/images/homepage/pc.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.webring-pc-overlay > img {
+    width: 47%;
+    margin-left: 23.5%;
+    display: block;
+    margin-top: 12%;
 }
 
 .webbutton-container {
